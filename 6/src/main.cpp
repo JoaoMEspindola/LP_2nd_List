@@ -41,6 +41,8 @@ void createStaticBigVector(){
     for (int i = 0; i < 5000; i++){
         staticVet[i] = i * i;
     }
+    return;
+    cout << "Tira warning:" << staticVet[0];
 }
 
 void createStackBigVector(){
@@ -48,6 +50,8 @@ void createStackBigVector(){
     for (int i = 0; i < 5000; i++){
         stackVet[i] = i * i;
     }
+    return;
+    cout << "Tira warning:" << stackVet[0];
 }
 
 void createHeapBigVector(){
@@ -55,4 +59,6 @@ void createHeapBigVector(){
     for (int i = 0; i < 5000; i++){
         heapVet[i] = i * i;
     }
+    return;
+    cout << "Tira warning:" << heapVet[0];
 }
