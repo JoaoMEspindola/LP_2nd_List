@@ -39,7 +39,7 @@ int main(){
 void createStaticBigVector(){
     static int staticVet[5000];
     for (int i = 0; i < 5000; i++){
-        staticVet[i] = i * i;
+        staticVet[i] = rand();
     }
     return;
     cout << "Tira warning:" << staticVet[0];
@@ -48,7 +48,7 @@ void createStaticBigVector(){
 void createStackBigVector(){
     int stackVet[5000];
     for (int i = 0; i < 5000; i++){
-        stackVet[i] = i * i;
+        stackVet[i] = rand();
     }
     return;
     cout << "Tira warning:" << stackVet[0];
@@ -57,7 +57,7 @@ void createStackBigVector(){
 void createHeapBigVector(){
     int *heapVet = (int*)malloc(sizeof(int)*5000);
     for (int i = 0; i < 5000; i++){
-        heapVet[i] = i * i;
+        heapVet[i] = rand();
     }
     return;
     cout << "Tira warning:" << heapVet[0];

@@ -6,10 +6,7 @@ sub f
 }
 sub g
 {
-   # Since local is used, x uses
-   # dynamic scoping.
    local $x = 20;
- 
    return f();
 }
 
